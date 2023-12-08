@@ -101,17 +101,46 @@
     }
 
     /* Additional styles for other elements can go here */
+
+       /* Default styles for larger screens */
+    #hero {
+      text-align: center;
+      padding: 100px 0;
+    }
+
+    h1 {
+      color: #ffffff;
+      font-family: 'Arial', sans-serif;
+      font-size: 100px;
+    }
+
+    h2 {
+      color: #f7f3f3;
+      font-family: 'Arial', sans-serif;
+      font-weight: normal;
+    }
+
+    /* Media query for smaller screens */
+    @media screen and (max-width: 768px) {
+      #hero {
+        padding: 50px 0;
+      }
+
+      h1 {
+        font-size: 60px;
+      }
+    }
   </style>
 </head>
 <body>
 
-  <section id="hero" class="d-flex flex-column justify-content-center" >
+  <section id="hero" class="d-flex flex-column justify-content-center">
     <div class="container" data-aos="zoom-in" data-aos-delay="100">
-      <h1 style="color: #ffffff; font-family: 'Arial', sans-serif; font-size: 100px;"><br>SS ENTERPRISES</h1>
-   <br>
-<br>
-
-      <h2 style="color: #f7f3f3; font-family: 'Arial', sans-serif; font-weight: normal;">Electrifying Excellence: SS Enterprises Sparks Innovation</h2>    </div>
+      <h1><br>SS ENTERPRISES</h1>
+      <br>
+      <br>
+      <h2>Electrifying Excellence: SS Enterprises Sparks Innovation</h2>
+    </div>
   </section>
 
   <!-- Your HTML content goes here -->
